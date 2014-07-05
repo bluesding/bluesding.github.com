@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="/content/css/shoppingcart.css" rel="stylesheet" />
+    <script src="/content/js/jquery-1.11.0.min.js"></script>
+    <script src="/content/js/shoppingcart.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //加
+            $('.i3').click(function () {
+                var o = $(this);
+                var txt = o.siblings('.i2');//兄弟，同级          //这里指（‘i3’）的兄弟（‘i2’）
+                var v = txt.val();
+                if (v < 10) {                                     //当v<10时才会运行下面一行的操作
+                    txt.val(parseInt(v) + 1);
+                }
+                jiesuan();
+                heji();
+            })
+            //减
+            $('.i1').click(function () {
+                var o = $(this);
+                var txt = o.siblings('.i2');
+                var v = txt.val();
+                if (v > 0) {                                      //当v>10时才会运行下面一行的操作
+                    txt.val(parseInt(v) - 1);     
+                }
+                jiesuan();
+                heji();
+            });
+            //删除
+            $('.td6 a').click(function () {
+                var o = $(this);
+                var op = o.parents('tr');  //parents(上一级，父辈)
+                op.remove();   
+                jiesuan();
+                heji();
+            });
+
+            //全选
+            $('.ckb').change(function () {
+                var o = $(this);
+                var at = o.prop('checked');      //checked 选中状态
+                var ckbs = $('#j_gwc').find('.ckb3');
+                ckbs.each(function () {
+                    var oo = $(this);
+                    oo.prop('checked', at);
+
+                });
+                jiesuan();
+                heji();
+            });
+            //单选
+            $('#j_gwc').find('.ckb3').change(function () {
+                jiesuan();
+                heji();
+            });
+
+        })
+        //价格合计
+        function jiesuan() {
+            var js = $('#j_b1');
+            var zonghe = 0;
+            $('.tr2').each(function () {                             //each(每一个)
+                var o = $(this);
+                var ck = o.find('.ckb3').prop('checked');               //prop 获取属性  checked选中  此行意指  找到.tr2里的.ckb3并且在选中的状态下进行下行操作
+                if (ck == true) {
+                    var v1 = o.find('.i2').val();                        //find(找到)  本行意为所有当前变量（'.i2'）的值
+                    var v2 = o.find('.td5').text();
+                    var he = parseInt(v1) * parseInt(v2);
+                    zonghe += he;
+                }
+                
+            });
+            js.text(zonghe);                                         //意为（'#j_b1'）的值
+        }
+        //件数合计
+        var heji = function () {
+            var hj = $('#j_jianshu');
+            var x = 0; 
+            $('.i2').each(function (k, v) {                           //(k,v)只有each有    为each自带默认值 可以不写
+                var oo = $(this);
+                var op = oo.parents('.tr2');
+                var ck = op.find('.ckb3').prop('checked');
+                if (ck == true) {
+                    var oov = parseInt(oo.val());
+                    x += oov;
+                }
+            });
+            hj.text(x);
+        }
+    </script>
+</head>
+<body>
+    <div class="gwc" id="j_gwc">
+        <table>
+        <tr class="tr1">
+            <th><label><input class="ckb" type="checkbox" checked="checked" />全选</label></th>
+            <th>商品名称</th>
+            <th>单位</th>
+            <th>数量</th>
+            <th>单价</th>   
+            <th>操作</th>
+        </tr>
+            <tr class="tr2">
+                <td>
+                    <input class="ckb3" type="checkbox" checked="checked"/>
+                    
+                </td>
+                <td><img src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201404/jiaoben2289/images/img1.jpg">
+                    产品标题</td>
+                <td>一件</td>
+                <td class="td4">
+                    <input class="i1"  type="button" value="-" />
+                    <input class="i2"  type="text" value="1" />
+                    <input class="i3"  type="button" value="+" />
+                </td>
+                <td class="td5">9.00</td>
+                <td class="td6"><a href="#">删除</a></td>
+
+
+
+            </tr>
+            <tr class="tr2">
+                <td>
+                    <input class="ckb3"  type="checkbox" checked="checked" />
+                    
+                </td>
+                <td><img src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201404/jiaoben2289/images/img1.jpg">
+                    产品标题</td>
+                <td>一件</td>
+                <td class="td4">
+                   <input class="i1"  type="button" value="-" />
+                    <input class="i2"  type="text" value="1" />
+                    <input class="i3"  type="button" value="+" />
+                </td>
+               <td class="td5">10.00</td>
+               <td class="td6"><a href="#">删除</a></td>
+
+
+
+            </tr>
+
+        </table>
+        <div class="account f12 yahei" >
+            <span class="s1">已选商品<b id="j_jianshu">2</b>件</span><span class="s2">合计(不含运费):￥<b id="j_b1">19:00</b></span><span class="s3 on fr">结算</span>
+
+        </div>
+    </div>
+
+    
+
+
+
+
+    <select id="j_sel">
+        <option value="0">123</option>
+        <option value="1">123</option>
+        <option value="2">12d3</option>
+        <option value="3">1456</option>
+        <option value="4">123</option>
+        <option value="5">123</option>
+        <option value="6">123</option>
+    </select>
+
+
+
+    <script>
+        $(function () {
+            $('#j_sel').change(function () {
+                var o = $(this);
+               
+                var xxx = o.find('option:selected').text();
+                alert(xxx)
+               
+               // var checkText=$("#select_id").find("option:selected").text();  //获取Select选择的Text
+
+            });
+
+
+
+        })
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
