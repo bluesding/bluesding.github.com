@@ -22,7 +22,7 @@ blockquote:before, blockquote:after,
 q:before, q:after { content: ''; content: none; }
 table { border-collapse: collapse; border-spacing: 0; }
 
-/*customize by jsonchou*/
+/*customize by longfei0128*/
 
 /*grid*/
 .g1 { width:10%;}
