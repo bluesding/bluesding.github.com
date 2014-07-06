@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>CSS三列布局，左右宽度固定，中间自适应宽度</title>
+    <style>
+        .box{width:90%; margin:0 auto; overflow:auto; _display:inline-block;}
+        .zuo{width:150px; float:left; background:#F60}
+        .zhong{ margin-left:160px;margin-right:210px; background:#6C3;}
+        .you{width:200px; float:right; background:#393}
+    </style>
+</head>
+<body>
+   
+<div class="box">
+    <div class="you"> 这是右侧的内容 固定宽度</div>
+    <div class="zuo">这是左侧的内容 固定宽度</div>
+    <div class="zhong">中间内容，自适应宽度</div>
+</div>
+</body>
+</html>
