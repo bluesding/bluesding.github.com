@@ -114,14 +114,14 @@ html { background: #fff; color: #000; font-size: 100%; -webkit-text-size-adjust:
 .aside{position:fixed;left:0;top:0;height:100%;width:30%;max-width:500px;background: url(/content/img/zhuye/y5.jpg) no-repeat 50% 50%;}
 
 .main {margin-left:30%;margin-top:80px;padding-right:15%;padding-left:5%;position:relative;}
-.main .nav {width:70%;margin-bottom:80px;}
+.main .nav {width:70%;margin-bottom:80px;display:none;}
 .main .nav li{float:left;cursor:pointer;width:25%;line-height:30px;font-size:16px;}
 .main .nav li a{font-size:18px;}
 .main .nav li a:hover , .nav .on a{color:red;}
-.main .accessory{border-bottom:2px solid red;width:6%;position:absolute;top:45px;}
 .main .post{width:70%;}
 .main .title{font-size:20px;font-family:'Microsoft YaHei';font-weight:900;margin-bottom:20px;}
 .main .post .post-text{line-height:25px;}
+.main .post .post-text .red{text-decoration:underline;color:red;}
 .main .post .single{margin-bottom:80px;}
 .modification{width:50px;height:50px;display:inline-block;position:fixed;right:-10px;bottom:-10px;background: url(/content/img/zhuye/y6.png) no-repeat  0 0;}
 .modification:hover{right:0;bottom:0;transition:all ease 0.5s;}
