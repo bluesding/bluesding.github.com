@@ -120,9 +120,9 @@ html { background: #fff; color: #000; font-size: 100%; -webkit-text-size-adjust:
 .nav-a li img{width:22px;height:12px;position:absolute;right:10px;top:-3px;}
 .nav-a .on{background:#ff8200;}
 .nav-a li a{padding:0 28px;font-size:14px;color:#fff;line-height:36px;display:inline-block;}
-.nav-a li a:hover{background:#0f68c5;}
-.nav-a .new-right{float:right;background:none;}
-
+.nav-a .l1:hover{background:#0f68c5;}
+.nav-a .new-right{float:right;background:none;background:url(http://400up.com/images/jiantou.png) no-repeat right 10px;transition:all ease 0.5s;}
+.nav-a .new-right:hover{background-position:right -24px;transition:all ease 0.5s;}
 .guild{background:#0a5db1;}
 .guild .box{margin:0 auto;color:#fff;}
 .guild .box-text{padding-top:70px;padding-left:10px;}
