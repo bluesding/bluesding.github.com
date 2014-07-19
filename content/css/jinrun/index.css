@@ -1,0 +1,175 @@
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section { display: block; }
+
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/*customize by longfei0128*/
+
+/*grid*/
+.g1 { width:10%;}
+.g2 { width:20%;}
+.g3 { width:30%;}
+.g4 { width:40%;}
+.g5 { width:50%;}
+.g6 { width:60%;}
+.g7 { width:70%;}
+.g8 { width:80%;}
+.g9 { width:90%;}
+.g10 { width:100%;}
+
+a { color: #333; text-decoration: none; }
+
+input[type=submit], button { cursor: pointer;}
+strong, b, .b { font-weight: bold; }
+em, i{ font-style:normal;}
+.u { text-decoration: underline; }
+
+.center { text-align: center; }
+.tr { text-align: right; }
+.tl { text-align: left; }
+.tc { text-align: center; }
+
+.fr { float: right; }
+.fl { float: left; }
+
+.f333 { color:#333;}
+.f666 { color:#666;}
+.f999 { color:#999;}
+
+.f10 { font-size: 10px; }
+.f11 { font-size: 11px; }
+.f12 { font-size: 12px; }
+.f14 { font-size: 14px; }
+.f15 { font-size: 15px; }
+.f16 { font-size: 16px; }
+.f18 { font-size: 18px; }
+.f20 { font-size: 20px; }
+.f24 { font-size: 24px; }
+
+.show,.block { display: block; }
+.hide,.none { display: none; }
+.yahei { font-family: "Microsoft YaHei"; }
+.songti { font-family:SimSun;}
+.verdana { font-family:Verdana;}
+
+.vm { vertical-align:middle;}
+
+.mt5 { margin-top: 5px; }
+.mr5 { margin-right: 5px; }
+.mb5 { margin-bottom: 5px; }
+.ml5 { margin-left: 5px; }
+.mt10 { margin-top: 10px; }
+.mr10 { margin-right: 10px; }
+.mb10 { margin-bottom: 10px; }
+.ml10 { margin-left: 10px; }
+
+.p5 { padding:5px;}
+.p10 { padding:10px;}
+.pt5 { padding-top: 5px; }
+.pr5 { padding-right: 5px; }
+.pb5 { padding-bottom: 5px; }
+.pl5 { padding-left: 5px; }
+.pt10 { padding-top: 10px; }
+.pr10 { padding-right: 10px; }
+.pb10 { padding-bottom: 10px; }
+.pl10 { padding-left: 10px; }
+
+.lh1 { line-height:1;}
+.lh2 { line-height:2;}
+.lh3 { line-height:3;}
+
+.pointer { cursor:pointer;}
+.noborder { border:0 none;}
+
+html { background: #fff; color: #000; font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+.w{width:1024px;}
+
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix { display: inline-table; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; *zoom:1;}
+
+
+
+
+
+
+.header .box{margin:50px auto 25px;}
+.nav-a{background:#317ee7;border-bottom:1px solid #579eff;}
+.nav-a ul{margin:0 auto;}
+.nav-a li{float:left;position:relative;}
+.nav-a li img{width:22px;height:12px;position:absolute;right:10px;top:-3px;}
+.nav-a .on{background:#ff8200;}
+.nav-a li a{padding:0 28px;font-size:14px;color:#fff;line-height:36px;display:inline-block;}
+.nav-a li a:hover{background:#0f68c5;}
+.nav-a .new-right{float:right;background:none;}
+
+.guild{background:#0a5db1;}
+.guild .box{margin:0 auto;color:#fff;}
+.guild .box-text{padding-top:70px;padding-left:10px;}
+.guild .box-text h2{font-size:48px;margin-bottom:30px;}
+.guild .box-text p{font-size:20px;line-height:32px;}
+.guild .conceal{display:none;}
+.guild .box-hd{text-align:center;background:url(http://400up.com/images/newtaocan/bannernav.png) no-repeat 0 0;}
+.guild .box-hd li{float:left;width:128px;height:102px;cursor:pointer;}
+.guild .box-hd li img{padding-top:16px;}
+.inquiry{background:#ccc;padding-bottom:50px;}
+.inquiry .box{margin:0 auto;padding-top:50px;width:780px;}
+.inquiry .box p{margin-bottom:20px;}
+.inquiry .parts{width:572px;height:58px;background:#fff;border:1px solid #90b9e0;}
+.inquiry .parts input{width:9%;height:36px;margin-top:11px;border:none;text-align:center;border-right:1px solid #d7d7d7 ;font-weight:bold;font-size:26px;vertical-align:middle;}
+.inquiry .parts .i2{border:none;}
+.inquiry .button input{border:none;width:134px;height:58px;background:#317ee7;border-radius:0 5px 5px 0;font-size:30px;color:#fff;vertical-align:middle;}
+.inquiry .box .reset{color:#317ee7;line-height:60px;background:url(http://400up.com/images/newtaocan/cz.png) no-repeat 0 22px;padding-left:20px;margin-left:20px;cursor:pointer;}
+
+.features .box{margin:0 auto;padding-top:30px;margin-bottom:20px;}
+.i-top h4,.i-top span,.i-top a{display:inline-block;}
+.i-top h4{color:#2882cc;line-height:42px;font-weight:900;border-bottom:1px solid #2882cc;}
+.i-top span,.i-top a{line-height:32px;}
+.i-top a{margin-top:10px;}
+.introduce {position:relative;}
+.introduce .i-top{height:42px;border-bottom:1px solid #dcdcdc;}
+.introduce .content {width:660px;margin:0 auto;}
+.introduce .content li{width:100px;text-align:center;padding:0 16px;}
+.introduce .content li .modification{width:100px;height:76px;background:url(http://400up.com/images/icon.png) no-repeat -4px -267px;text-align:center;padding-top:30px;}
+.introduce .content li img{margin-left:5px;;transition:all ease 0.6s;}
+.introduce .content li img:hover{transform:rotate(360deg)}
+.introduce .i-left{background:url(http://400up.com/images/icon.png) no-repeat -26px -394px;width:16px;height:30px;display:inline-block;cursor:pointer;margin-top:40px;}
+.introduce .i-left:hover{background-position:-26px -444px;}
+.introduce .i-right{background:url(http://400up.com/images/icon.png) no-repeat -70px -394px;width:16px;height:30px;display:inline-block;cursor:pointer;margin-top:40px;}
+.introduce .i-right:hover{background-position:-70px -444px;}
+.features .news{width:258px;}
+.features .news .news-top{line-height:42px;border-bottom:1px solid #dcdcdc;}
+.features .news h4,a{display:inline-block;}
+.features .news h4{color:#2882cc;border-bottom:1px solid #2882cc;}
+.features .news li{font-size:14px;line-height:30px;background:url(http://400up.com/images/dot.gif) no-repeat 0 14px;padding-left:20px;}
+.features .kehu{margin:0 auto;line-height:42px;padding-bottom:50px;} 
+.features .kehu h4{font-size:18px;color:#2882cc;}
+.features .kehu .kehe-logo{height:60px;border:1px solid #e6e6e6;}
+.features .kehe-logo li{width:127px;height:46px;position:relative;left:10px;top:6px;float:left;background:url(http://400up.com/images/logo1.gif) no-repeat 0 -54px;transition:all ease 0.5s;}
+.features .kehe-logo li:hover{background-position:0 0;transition:all ease 0.5s;}
+
+
+
+
+
+
