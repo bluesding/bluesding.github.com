@@ -112,7 +112,7 @@ html { background: #fff; color: #000; font-size: 100%; -webkit-text-size-adjust:
 
 
 
-
+/*header*/
 .header .box{margin:50px auto 25px;}
 .nav-a{background:#317ee7;border-bottom:1px solid #579eff;}
 .nav-a ul{margin:0 auto;}
@@ -123,6 +123,8 @@ html { background: #fff; color: #000; font-size: 100%; -webkit-text-size-adjust:
 .nav-a .l1:hover{background:#0f68c5;}
 .nav-a .new-right{float:right;background:none;background:url(http://400up.com/images/jiantou.png) no-repeat right 10px;transition:all ease 0.5s;}
 .nav-a .new-right:hover{background-position:right -24px;transition:all ease 0.5s;}
+
+/*guild*/
 .guild{background:#0a5db1;}
 .guild .box{margin:0 auto;color:#fff;}
 .guild .box-text{padding-top:70px;padding-left:10px;}
@@ -132,6 +134,8 @@ html { background: #fff; color: #000; font-size: 100%; -webkit-text-size-adjust:
 .guild .box-hd{text-align:center;background:url(http://400up.com/images/newtaocan/bannernav.png) no-repeat 0 0;}
 .guild .box-hd li{float:left;width:128px;height:102px;cursor:pointer;}
 .guild .box-hd li img{padding-top:16px;}
+
+/*inquiry*/
 .inquiry{background:#ccc;padding-bottom:50px;}
 .inquiry .box{margin:0 auto;padding-top:50px;width:780px;}
 .inquiry .box p{margin-bottom:20px;}
@@ -146,6 +150,8 @@ html { background: #fff; color: #000; font-size: 100%; -webkit-text-size-adjust:
 .i-top h4{color:#2882cc;line-height:42px;font-weight:900;border-bottom:1px solid #2882cc;}
 .i-top span,.i-top a{line-height:32px;}
 .i-top a{margin-top:10px;}
+
+/*introduce*/
 .introduce {position:relative;}
 .introduce .i-top{height:42px;border-bottom:1px solid #dcdcdc;}
 .introduce .content {width:660px;margin:0 auto;}
@@ -157,6 +163,8 @@ html { background: #fff; color: #000; font-size: 100%; -webkit-text-size-adjust:
 .introduce .i-left:hover{background-position:-26px -444px;}
 .introduce .i-right{background:url(http://400up.com/images/icon.png) no-repeat -70px -394px;width:16px;height:30px;display:inline-block;cursor:pointer;margin-top:40px;}
 .introduce .i-right:hover{background-position:-70px -444px;}
+
+/*features*/
 .features .news{width:258px;}
 .features .news .news-top{line-height:42px;border-bottom:1px solid #dcdcdc;}
 .features .news h4,a{display:inline-block;}
@@ -165,8 +173,9 @@ html { background: #fff; color: #000; font-size: 100%; -webkit-text-size-adjust:
 .features .kehu{margin:0 auto;line-height:42px;padding-bottom:50px;} 
 .features .kehu h4{font-size:18px;color:#2882cc;}
 .features .kehu .kehe-logo{height:60px;border:1px solid #e6e6e6;}
-.features .kehe-logo li{width:127px;height:46px;position:relative;left:10px;top:6px;float:left;background:url(http://400up.com/images/logo1.gif) no-repeat 0 -54px;transition:all ease 0.5s;}
-.features .kehe-logo li:hover{background-position:0 0;transition:all ease 0.5s;}
+.features .kehe-logo li{width:127px;height:46px;position:relative;left:10px;top:6px;float:left;transition:all ease 0.5s;overflow:hidden;}
+.features .kehe-logo li img{transition:all ease 0.5s;margin-top:-50px;}
+.features .kehe-logo li:hover img{margin-top:0;}
 
 
 
